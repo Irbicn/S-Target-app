@@ -1,0 +1,74 @@
+.STargetTask{
+    width: 300px;
+    display: grid;
+    min-height: 120px;
+    border-radius: 5px;
+    background: rgba(30,30,30);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    color: white;
+    position: relative;
+    align-items: center;
+    margin:0 auto 20px auto;
+    padding: 15px;
+}
+.STargetTask-text{
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 270px;
+}
+.STargetTask--title{
+    text-align: center;
+    font-size: 1.9rem;
+    max-width: 300px;
+    overflow: hidden;
+}
+.STargetTask--text{
+    overflow: hidden;
+    font-weight:400;
+    font-size: 1.6rem;
+    user-select:text;
+    width: 100%;
+}
+
+.STargetTask-options{
+    background-color: aliceblue;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    width: 45px;
+    border-radius: 14px;
+    align-self: baseline;
+}
+
+.STargetTask--options-container{
+    position: relative;
+    height: 76px;
+    overflow: hidden;
+}
+.STargetTask--options{
+    transition: top 1s;
+    top: -81%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.STargetTask--options.open{
+    transition: top 1s;
+    top: 19%;
+}
+.STargetIcon-config{
+    transition: transform 1.4s;
+    transform: rotate(-30deg);
+}
+.STargetIcon-config.open{
+    transition: transform 1.4s;
+    transform: rotate(60deg);
+}
